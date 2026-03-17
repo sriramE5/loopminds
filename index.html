@@ -32,7 +32,7 @@
             justify-content: center;
             align-items: center;
             backdrop-filter: blur(10px);
-            background: rgba(0,0,0,0.3);
+            background: rgb(0, 0, 0);
             border-bottom: 1px solid rgba(255,255,255,0.1);
         }
 
@@ -45,6 +45,12 @@
         .logo img {
             width: 40px;
             height: 40px;
+        }
+
+        .logo img[src="title.png"] {
+            width: auto;
+            height: auto;
+            max-height: 60px;
         }
 
         .logo span {
@@ -131,7 +137,7 @@
         <div class="logo">
             <!-- Replace with your logo -->
             <img src="logo.png" alt="Loopminds Logo">
-            <span>Loopminds</span>
+            <img src="title.png" alt="Loopminds Title">
         </div>
     </header>
 
