@@ -21,19 +21,20 @@
         }
 
         body {
-            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-            color: white;
+            background: linear-gradient(135deg, #000000, #1a1a1a, #2d2d2d);
+            color: #e0e0e0;
         }
 
         /* HEADER */
         header {
-            height: 60px;
+            height: 80px;
             display: flex;
             justify-content: center;
             align-items: center;
             backdrop-filter: blur(10px);
-            background: rgb(0, 0, 0);
-            border-bottom: 1px solid rgba(255,255,255,0.1);
+            background: rgba(0, 0, 0, 0.9);
+            border-bottom: 2px solid #ff6600;
+            box-shadow: 0 0 20px rgba(255, 102, 0, 0.3);
         }
 
         .logo {
@@ -60,7 +61,7 @@
 
         /* MAIN */
         .container {
-            height: calc(100vh - 80px);
+            height: calc(100vh - 100px);
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -72,11 +73,14 @@
         h1 {
             font-size: 2.5rem;
             margin-bottom: 10px;
+            color: #ff6600;
+            text-shadow: 0 0 20px rgba(255, 102, 0, 0.5);
         }
 
         p {
             margin-bottom: 40px;
             opacity: 0.8;
+            color: #b0b0b0;
         }
 
         .buttons {
@@ -97,15 +101,18 @@
             justify-content: center;
             gap: 10px;
             transition: 0.3s;
-            background: rgba(255, 255, 255, 0.1);
+            background: rgba(45, 45, 45, 0.8);
             backdrop-filter: blur(10px);
-            border: 1px solid rgba(255,255,255,0.2);
-            color: white;
+            border: 2px solid #333;
+            color: #e0e0e0;
+            box-shadow: 0 0 15px rgba(255, 102, 0, 0.2);
         }
 
         .btn:hover {
             transform: translateY(-5px) scale(1.05);
-            background: rgba(255, 255, 255, 0.2);
+            background: rgba(255, 102, 0, 0.2);
+            border-color: #ff6600;
+            box-shadow: 0 0 25px rgba(255, 102, 0, 0.5);
         }
 
         a {
@@ -143,7 +150,7 @@
 
     <!-- MAIN -->
     <div class="container">
-        <h1>Welcome to Loopminds</h1>
+        
         <p>Access your AI tools</p>
 
         <div class="buttons">
