@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loopminds</title>
+
+    <!-- Favicon (place favicon files in root or favicon_io folder) -->
+    <link rel="icon" type="image/png" href="favicon_io/favicon-32x32.png">
+    <link rel="apple-touch-icon" href="favicon_io/apple-touch-icon.png">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: white;
+        }
+
+        /* HEADER */
+        header {
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            backdrop-filter: blur(10px);
+            background: rgba(0,0,0,0.3);
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .logo span {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+        /* MAIN */
+        .container {
+            height: calc(100vh - 80px);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 40px;
+            opacity: 0.8;
+        }
+
+        .buttons {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            width: 100%;
+            max-width: 800px;
+        }
+
+        .btn {
+            padding: 20px;
+            border-radius: 15px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            transition: 0.3s;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+            color: white;
+        }
+
+        .btn:hover {
+            transform: translateY(-5px) scale(1.05);
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .footer {
+            margin-top: 40px;
+            font-size: 0.9rem;
+            opacity: 0.6;
+        }
+
+        @media(max-width: 600px) {
+            .logo span {
+                font-size: 1.4rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo">
+            <!-- Replace with your logo -->
+            <img src="logo.png" alt="Loopminds Logo">
+            <span>Loopminds</span>
+        </div>
+    </header>
+
+    <!-- MAIN -->
+    <div class="container">
+        <h1>Welcome to Loopminds</h1>
+        <p>Access your AI tools</p>
+
+        <div class="buttons">
+            <a href="https://interviewer.loopminds.in">
+                <div class="btn">
+                    <i class="fa-solid fa-microphone"></i>
+                    AI Interviewer
+                </div>
+            </a>
+
+            <a href="https://classmate.loopminds.in">
+                <div class="btn">
+                    <i class="fa-solid fa-book"></i>
+                    Classmate
+                </div>
+            </a>
+
+            <a href="https://auscampusbot.loopminds.in">
+                <div class="btn">
+                    <i class="fa-solid fa-robot"></i>
+                    CampusBot
+                </div>
+            </a>
+        </div>
+
+        <div class="footer">
+            © 2026 Loopminds. All rights reserved.
+        </div>
+    </div>
+
+</body>
+</html>
