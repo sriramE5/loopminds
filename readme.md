@@ -1,1 +1,1 @@
-main page for loopminds link: loopminds.in
+main page for loopminds link: {loopminds.in}
