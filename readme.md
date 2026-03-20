@@ -13,7 +13,7 @@ Loopminds is a website that provides access to multiple projects in one place.
   https://classmate.loopminds.in  
 
 - AUS CampusBot  
-  https://campusbot.loopminds.in  
+  https://auscampusbot.loopminds.in  
 
 ## About
 
